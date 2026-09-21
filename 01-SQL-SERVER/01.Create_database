@@ -1,0 +1,62 @@
+-- Create database and Drop database
+
+/* Database is a place where we can store the information like originzed data
+    personal data information
+  */
+
+/*
+    Syntax: CREATE DATABASE < DATABASE_NAME >
+*/
+
+CREATE DATABASE DATAENGINEER;
+
+/*
+A table is a database object used to store data in rows and columns
+Columns is define the attributes
+Rows represents a records
+
+    Syntax: CREATE TABLE < TABLE_NAME > (
+    COLUMN_NAME DATATYPE
+    )
+*/
+
+CREATE TABLE EMPLOYEE(
+    ID INT,
+    NAME VARCHAR,
+    DOB DATETIME,
+    SALARY FLOAT
+)
+
+/* 
+Insert is a DML(DATA MANIPULATION LANGUAGE) command used to add new records into a table.
+
+    Syntax: INSERT INTO < TABLE_NAME > VALUES
+    (<<  HERE RECORDS ...>>)
+*/
+
+INSERT INTO EMPLOYEE VALUES(
+    1,'CHOWREDDY','1995-01-15',75600
+)
+
+
+/*
+Drop is a DDL(DATA DEFINITION LANGUAGE) command used to permanently remove the database
+object such as tables and including its data structure.
+
+    Syntax: DROP DATABASE < DATABASE_NAME >
+*/
+
+DROP DATABASE DATAENGINEER;
+
+
+/*
+Select command is used to retrieve/read data from a database table
+
+    Syntax: SELECT * FROM EMPLOYEE;
+*/
+
+/*
+Distinct command is used with SELECT to eliminate duplicate records from the query
+result and return only unique values 
+    Syntax: SELECT DISTINCT COLUMN_NAME FROM EMPLOYEE
+*/
