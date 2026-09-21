@@ -2,6 +2,7 @@
 
 /* Database is a place where we can store the information like originzed data
     personal data information
+    Collection of data used to store manage,and retrieve information efficiently.
   */
 
 /*
